@@ -10,4 +10,5 @@ gem 'aws-sdk-s3'
 gem 'base64'
 gem 'dotenv'
 gem 'nokogiri'
+gem 'rake'
 gem 'whenever', require: false

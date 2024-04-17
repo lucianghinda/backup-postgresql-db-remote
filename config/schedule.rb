@@ -1,6 +1,5 @@
-
-require_relative './scheduled_run'
+# frozen_string_literal: true
 
 every :hour do
-  runner 'ScheduledRun.new.backup'
+  rake "backup"
 end

@@ -26,6 +26,7 @@ GEM
     nokogiri (1.16.3-x86_64-linux)
       racc (~> 1.4)
     racc (1.7.3)
+    rake (13.2.1)
     whenever (1.0.0)
       chronic (>= 0.6.3)
 
@@ -38,6 +39,7 @@ DEPENDENCIES
   base64
   dotenv
   nokogiri
+  rake
   whenever
 
 RUBY VERSION
