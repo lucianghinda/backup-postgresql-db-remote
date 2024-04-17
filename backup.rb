@@ -2,6 +2,7 @@ require 'aws-sdk-s3'
 require_relative 'db_config'
 require_relative 'cloudflare_config'
 require_relative 'output'
+require 'dotenv/load'
 
 class Backup
   def initialize(db_name: , remote_folder: "production_backups")

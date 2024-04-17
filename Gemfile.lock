@@ -18,23 +18,23 @@ GEM
     aws-sigv4 (1.8.0)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
+    dotenv (3.1.0)
     jmespath (1.6.2)
-    mini_portile2 (2.8.5)
-    nokogiri (1.16.3)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.16.3-arm64-darwin)
       racc (~> 1.4)
     racc (1.7.3)
 
 PLATFORMS
   arm64-darwin-23
-  ruby
 
 DEPENDENCIES
   aws-sdk-s3
   base64
+  dotenv
   nokogiri
+
+RUBY VERSION
+   ruby 3.3.0p0
 
 BUNDLED WITH
    2.5.6
