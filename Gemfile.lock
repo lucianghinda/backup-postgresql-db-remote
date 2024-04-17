@@ -22,10 +22,13 @@ GEM
     jmespath (1.6.2)
     nokogiri (1.16.3-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.16.3-x86_64-linux)
+      racc (~> 1.4)
     racc (1.7.3)
 
 PLATFORMS
   arm64-darwin-23
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk-s3
