@@ -20,6 +20,12 @@ cp .env.sample .env
 
 Install [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html) on the machine where you plan to run this script
 
+### 4. Configure password for the user that will be used to connect to PostgreSQL
+
+pg_dump does not allow to directly specify the password.
+
+So you should configure the password using `.pgpass` file.
+
 ### 4. Run the script
 
 ```bash
