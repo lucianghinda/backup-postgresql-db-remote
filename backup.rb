@@ -15,7 +15,7 @@ class Backup
 
   def create
     fullpath = @output.fullpath("sql")
-    system("#{@db_config.pg_dump} -h #{@db_config.db_host} -p #{@db_config.db_port} -U #{@db_config.db_user} #{@db_config.db_name} > #{fullpath}")
+    system("#{@db_config.pg_dump} -h #{@db_config.db_host} -p #{@db_config.db_port} -U #{@db_config.db_user} #{@db_config.db_name} --no-owner > #{fullpath}")
 
     if File.exist?(fullpath)
       puts "Backup file created at #{fullpath}"
