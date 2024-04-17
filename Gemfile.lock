@@ -18,6 +18,7 @@ GEM
     aws-sigv4 (1.8.0)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
+    chronic (0.10.2)
     dotenv (3.1.0)
     jmespath (1.6.2)
     nokogiri (1.16.3-arm64-darwin)
@@ -25,6 +26,8 @@ GEM
     nokogiri (1.16.3-x86_64-linux)
       racc (~> 1.4)
     racc (1.7.3)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
 
 PLATFORMS
   arm64-darwin-23
@@ -35,6 +38,7 @@ DEPENDENCIES
   base64
   dotenv
   nokogiri
+  whenever
 
 RUBY VERSION
    ruby 3.3.0p0
