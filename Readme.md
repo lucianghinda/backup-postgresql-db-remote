@@ -2,10 +2,26 @@
 
 ## How to use it
 
-1. Configure your environment with environment variables that are shown in `.env.sample`. This script does not uses `dotenv` so you will need to rely on setting the environment variables manually in your own environment.
-2. Install [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html) on the machine where you plan to run this script
-3. Go to https://www.cloudflare.com/developer-platform/r2/ and create an account
-4. Create a bucket in R2 (make sure it is not public)
-5. Go to "Manage R2 API Tokens" and generate a token for your own bucket
-6. Fill in the Cloudflare environment variables
-7. Run `bundle exec ruby run.rb --name DB_NAME`
+### 1. Create an account on Cloudflare
+
+1. Go to https://www.cloudflare.com/developer-platform/r2/ and create an account
+2. Create a bucket in R2 (make sure it is not public)
+3. Go to "Manage R2 API Tokens" and generate a token for your own bucket. Keep that around to add it to your environment variables
+
+### 2. Configure environment variables
+
+Configure your environment with environment variables that are shown in `.env.sample`.
+
+```bash
+cp .env.sample .env
+```
+
+### 3. Install `pg_dump` on the machine where you will run this script
+
+Install [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html) on the machine where you plan to run this script
+
+### 4. Run the script
+
+```bash
+bundle exec ruby run.rb --name DB_NAME`
+```
