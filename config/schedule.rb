@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-every :hour do
+every 4.hours do
   rake "backup"
 end
